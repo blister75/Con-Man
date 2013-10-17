@@ -10,21 +10,17 @@
             <a class="navbar-brand" href="#">Your App</a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Booths</a>
+                <li><a href="#">Events</a>
+                <li><a href="#">Speakers</a>
+                <li><a href="#">Settings</a>
+            </ul>
         </div>
     </nav>
     <div class="container" id="main">
         <div class="row">
             <div>
-                <div class="col-md-3">
-                    <div class="well sidebar-nav">
-                        <span class="nav-header">Colors</span>
-                        <ul class="nav nav-list">
-                        {{#each item in controller}}
-                            <li>{{item}}</li>
-                        {{/each}}
-                        </ul>
-                    </div>
-                </div>
                 <div class="col-md-9">
                     {{outlet}}
                 </div>
